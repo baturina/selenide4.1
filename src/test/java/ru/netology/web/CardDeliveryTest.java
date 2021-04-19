@@ -26,9 +26,9 @@ public class CardDeliveryTest {
         open("http://localhost:9999");
         LocalDate date = LocalDate.now();
         LocalDate futureDate = date.plusDays(3);
-        $("[data-test-id=city] .input__control").setValue("Самара");
+        $("[data-test-id=city] .input__control").setValue("Владимир");
         $("[data-test-id=date] .input__control").setValue(futureDate.toString());
-        $("[data-test-id=name] .input__control").setValue("Леонова Алла");
+        $("[data-test-id=name] .input__control").setValue("Иванова Алла");
         $("[data-test-id=phone] .input__control").setValue("+78005999999");
         $("[data-test-id=agreement] .checkbox__box").click();
         $(".button .button__text").click();
