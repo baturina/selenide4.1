@@ -175,7 +175,7 @@ package ru.netology.web;
         $("[data-test-id=agreement]").click();
         $(withText("Забронировать")).click();
         $("[data-test-id=name].input_invalid .input__sub")
-                .shouldHave(text("Имя и Фамилия указаны неверно"));
+                .shouldHave(text("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
     }
 
     @Test
